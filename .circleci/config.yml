@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: cimg/rust:1.58.1
+    steps:
+      - checkout
+      - run: cargo --version
+      - run: cargo test
+
+  release:
+    docker:
+      - image: cimg/rust:1.58.1
+    steps:
+      - checkout
+      - run:
+          name: Build Relase Version 
+          command: cargo build --release
+      - run:
+          name: Sign In To Crates.io
+          command: cargo login $CRATES_IO_TOKEN
+      - run:
+          name: Publish New Version to Crates.io
+          command: cargo publish
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - release

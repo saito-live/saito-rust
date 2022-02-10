@@ -4,11 +4,14 @@ version = "0.1.0"
 authors = [
     "Clayton Rabenda <clay@saito.tech>",
     "Stephen Peterkins <stephen@saito.tech>",
-    "David Lancashire <david@saito.tech>"
+    "David Lancashire <david@saito.tech>",
+    "Steven Zeiler <zyler@saito.live>"
 ]
+description = "A high-performance implementation of Saito in Rust."
+homepage = "https://github.com/SaitoTech/saito-rust"
 edition = "2021"
 default-run = "saito_rust"
-
+license-file = "LICENSE.md"
 
 [[bin]]
 name = "saitocli"
