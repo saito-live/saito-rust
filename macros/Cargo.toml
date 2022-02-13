@@ -1,6 +1,6 @@
 [package]
 name = "saito_macros"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Clayton Rabenda <claytonrabenda@gmail.com>"]
 edition = "2021"
 
