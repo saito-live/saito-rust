@@ -65,7 +65,7 @@ cargo run --bin saitocli -- create_tx -a 1 -t gYsu1fVHjP6Z8CHCzti9K9xb5JPqpEL7zi
 
 use base58::FromBase58;
 use clap::{App, Arg};
-use saito_rust::{
+use saito::{
     block::Block,
     crypto::{hash, SaitoHash},
     slip::Slip,
@@ -82,7 +82,7 @@ use std::{
 
 // TODO Combine this into the main binary?
 #[tokio::main]
-pub async fn main() -> saito_rust::Result<()> {
+pub async fn main() -> saito::Result<()> {
     let command_matches = App::new("Saito Command Line Interface")
         .about("Interact with your wallet and the Saito blockchain through the command line")
         .subcommand(

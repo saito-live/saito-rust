@@ -4,13 +4,13 @@
 ## Help
 
 ```bash
-saito_rust help
+saito help
 ```
 
 ## Example Usage
 
 ```bash
-saito_rust --password=asdf --wallet=test/testwallet
+saito --password=asdf --wallet=test/testwallet
 ```
 
 ## Dev
@@ -22,7 +22,7 @@ cargo run -- --help
 cargo run -- --password=asdf --wallet=test/testwallet
 ```
 */
-use saito_rust::consensus;
+use saito::consensus;
 use std::env;
 
 #[tokio::main]

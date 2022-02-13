@@ -1625,16 +1625,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ef703b7cb59335eae2eb93ceb664c0eb7ea6bf567079d843e09420219668e072"
 
 [[package]]
-name = "saito_macros"
-version = "0.1.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "saito_rust"
+name = "saito"
 version = "0.0.1"
 dependencies = [
  "aes",
@@ -1663,7 +1654,7 @@ dependencies = [
  "reqwest",
  "ring",
  "rpassword",
- "saito_macros",
+ "saito-macros",
  "secp256k1",
  "serde 1.0.130",
  "serde-aux",
@@ -1680,6 +1671,15 @@ dependencies = [
  "url",
  "uuid",
  "warp",
+]
+
+[[package]]
+name = "saito-macros"
+version = "0.0.2"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]

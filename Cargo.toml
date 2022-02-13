@@ -1,5 +1,5 @@
 [package]
-name = "saito_rust"
+name = "saito"
 version = "0.0.1"
 authors = [
     "Clayton Rabenda <clay@saito.tech>",
@@ -10,7 +10,7 @@ authors = [
 description = "A high-performance implementation of Saito in Rust."
 homepage = "https://github.com/SaitoTech/saito-rust"
 edition = "2021"
-default-run = "saito_rust"
+default-run = "saito"
 license-file = "LICENSE.md"
 
 [workspace]
