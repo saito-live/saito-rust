@@ -35,7 +35,7 @@ futures = { version = "0.3", default-features = false }
 hex = "0.4.3"
 lazy_static = "1.4.0"
 log = "0.4.14"
-saito-macros = { path = "macros", version = "0.1.0" }
+saito-macros = { path = "macros", version = "0.0.2" }
 merkle = "1.11.0"
 rand = "0.8.4"
 rayon = "1.5"
