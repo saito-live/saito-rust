@@ -1,6 +1,6 @@
 [package]
-name = "saito_macros"
-version = "0.0.1"
+name = "saito-macros"
+version = "0.0.2"
 authors = ["Clayton Rabenda <claytonrabenda@gmail.com>"]
 edition = "2021"
 description = "Macros for using in Saito Consensus"
