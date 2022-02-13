@@ -3,6 +3,8 @@ name = "saito_macros"
 version = "0.0.1"
 authors = ["Clayton Rabenda <claytonrabenda@gmail.com>"]
 edition = "2021"
+description = "Macros for using in Saito Consensus"
+license-file = "LICENSE.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
