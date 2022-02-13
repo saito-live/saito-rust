@@ -1,5 +1,5 @@
 use crate::crypto::SaitoHash;
-use macros::TryFromByte;
+use saito_macros::TryFromByte;
 use std::convert::{TryFrom, TryInto};
 
 /// Data Object for SNDCHAIN. Is used as a payload in an APIMessage message field.

@@ -930,15 +930,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "macros"
-version = "0.1.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
 name = "matches"
 version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1634,8 +1625,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ef703b7cb59335eae2eb93ceb664c0eb7ea6bf567079d843e09420219668e072"
 
 [[package]]
+name = "saito_macros"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "saito_rust"
-version = "0.1.0-rc1"
+version = "0.0.1"
 dependencies = [
  "aes",
  "ahash",
@@ -1655,13 +1655,15 @@ dependencies = [
  "hex",
  "lazy_static",
  "log",
- "macros",
  "merkle",
+ "proc-macro2",
+ "quote",
  "rand 0.8.4",
  "rayon",
  "reqwest",
  "ring",
  "rpassword",
+ "saito_macros",
  "secp256k1",
  "serde 1.0.130",
  "serde-aux",
@@ -1669,6 +1671,7 @@ dependencies = [
  "serde_json",
  "serde_with",
  "serial_test",
+ "syn",
  "tokio",
  "tokio-stream",
  "tokio-tungstenite 0.15.0",

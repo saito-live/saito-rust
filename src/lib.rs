@@ -21,6 +21,11 @@ The Saito Team
 dev@saito.tech
 
 */
+/*
+#[macro_use]
+#pub mod saito_macros;
+*/
+
 pub mod block;
 pub mod blockchain;
 pub mod blockring;
